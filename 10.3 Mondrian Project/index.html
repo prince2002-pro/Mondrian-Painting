@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container {
+      display: grid;
+      grid-template-columns: 320px 420px;
+      grid-template-rows: 414px 296px;
+      width: 748px;
+      height: 748px;
+      gap: 9px;
+      background-color: #000;
+      padding: 0;
+    }
+    .red {
+      background-color: #E72F24;
+      
+    }
+    .blue {
+      background-color: #F0F1EC;
+      
+      
+    }
+    .yellow {
+      background-color: #F0F1EC;
+      
+     
+    }
+    .white {
+      display: grid;
+      grid-template-columns: 351px 122px;
+      gap: 9px;
+      background-color: #000;
+      padding: 0;
+      
+    }
+    .small {
+      background-color: #F0F1EC;
+      
+     } 
+      .small-mixed {
+        display: grid;
+        grid-template-columns: 198px 153px;
+        background: #232629;
+        height: 20px;
+        width: 351px;
+        
+        
+      }
+      .small-mixed > .yellow-small {
+        background-color: #F9D01E;
+        
+      }
+      .small-mixed > .black {
+        background-color: #232629;
+      }
+      .mixed-blue {
+        background-color: #F0F1EC;
+        height: 297px;
+        
+      }
+      .mixed{
+        display: grid;
+        grid-template-columns: 59px ;
+        grid-template-rows: 140px 175px;
+        background-color: #F0F1EC;
+        order:1;
+        width: 60px;
+        height: 325px;
+        
+      }
+      .mixed > .blue1 {
+        background-color: #004592;
+        border-bottom: #000 solid 19px;
+        
+      }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    <div class="white">
+      <div class="mixed-blue"></div>
+      <div class="mixed">
+        <div class="blue1"></div>
+      </div>
+    </div>
+    <div class="small"></div>
+    <div class="small-mixed">
+      <div class="yellow-small"></div>
+      <div class="black"></div>
+    </div>
+    
+   </div>
+</body>
+
+</html>
